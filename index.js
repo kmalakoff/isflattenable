@@ -4,7 +4,7 @@ var isArray = require('lodash.isarray');
 var isArguments = require('lodash.isarguments');
 
 /** Built-in value reference. */
-var spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined;
+var spreadableSymbol = typeof Symbol !== 'undefined' ? Symbol.isConcatSpreadable : undefined;
 
 /**
  * Checks if `value` is a flattenable `arguments` object or array.
