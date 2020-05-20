@@ -1,6 +1,6 @@
 /** Republished from lodash https://github.com/lodash/lodash/blob/master/.internal/isFlattenable.js */
 
-var isArray = require('lodash.isarray');
+var isArray = require('isarray');
 var isArguments = require('lodash.isarguments');
 
 /** Built-in value reference. */
