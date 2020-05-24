@@ -15,14 +15,13 @@
   "author": "Kevin Malakoff <kmalakoff@gmail.com> (https://github.com/kmalakoff)",
   "main": "index.js",
   "scripts": {
-    "compat": "nvs --engines mocha-compat test/spec/**/*.test.js",
     "format": "eslint . --fix",
     "lint": "eslint .",
     "test": "mocha-compat test/spec/**/*.test.js"
   },
   "dependencies": {
-    "lodash.isarguments": "^3.1.0",
-    "isarray": "^2.0.5"
+    "isarray": "^2.0.5",
+    "lodash.isarguments": "^3.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -34,7 +33,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "mocha-compat": "^3.5.5",
-    "nvs": "^0.4.4",
     "prettier": "^2.0.5"
   },
   "engines": {
