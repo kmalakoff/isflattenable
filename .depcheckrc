@@ -1,1 +1,1 @@
-ignores: ["depcheck"]
+ignores: ["isflattenable", "depcheck", "ts-dev-stack", "@types/*"]
