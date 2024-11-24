@@ -21,7 +21,7 @@ function _interop_require_default(obj) {
         default: obj
     };
 }
-/** Built-in value reference. */ var spreadableSymbol = typeof Symbol !== "undefined" ? Symbol.isConcatSpreadable : undefined;
+/** Built-in value reference. */ var spreadableSymbol = typeof Symbol !== 'undefined' ? Symbol.isConcatSpreadable : undefined;
 function isFlattenable(value) {
     return (0, _isarray.default)(value) || (0, _lodashisarguments.default)(value) || !!(spreadableSymbol && value && value[spreadableSymbol]);
 }
