@@ -31,8 +31,8 @@
   "scripts": {
     "build": "tsds build",
     "deploy": "tsds deploy",
-    "format": "biome check --apply-unsafe src/ test/",
-    "test": "tsds test:node --timeout=10000",
+    "format": "biome check --write --unsafe src/ test/",
+    "test": "tsds test:node --no-timeouts",
     "test:engines": "nvu engines npm test",
     "version": "tsds version"
   },
@@ -41,11 +41,11 @@
     "lodash.isarguments": "^3.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.5.3",
-    "@types/mocha": "^10.0.6",
-    "@types/node": "^20.11.19",
+    "@biomejs/biome": "^1.9.4",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.1",
     "depcheck": "^1.4.7",
-    "ts-dev-stack": "^0.14.4"
+    "ts-dev-stack": "^1.1.1"
   },
   "engines": {
     "node": ">=0.8"
