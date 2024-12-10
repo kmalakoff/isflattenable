@@ -21,8 +21,8 @@ function _interop_require_default(obj) {
         default: obj
     };
 }
-/** Built-in value reference. */ var spreadableSymbol = typeof Symbol !== "undefined" ? Symbol.isConcatSpreadable : undefined;
+/** Built-in value reference. */ var spreadableSymbol = typeof Symbol !== 'undefined' ? Symbol.isConcatSpreadable : undefined;
 function isFlattenable(value) {
     return (0, _isarray.default)(value) || (0, _lodashisarguments.default)(value) || !!(spreadableSymbol && value && value[spreadableSymbol]);
 }
-/* CJS INTEROP */ if (exports.__esModule && exports.default) { Object.defineProperty(exports.default, '__esModule', { value: true }); for (var key in exports) exports.default[key] = exports[key]; module.exports = exports.default; }
+/* CJS INTEROP */ if (exports.__esModule && exports.default) { try { Object.defineProperty(exports.default, '__esModule', { value: true }); for (var key in exports) { exports.default[key] = exports[key]; } } catch (_) {}; module.exports = exports.default; }
