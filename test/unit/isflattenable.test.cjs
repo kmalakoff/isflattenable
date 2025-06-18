@@ -23,7 +23,7 @@ describe('isflattenable', () => {
     });
 
     it('should work with arguments', () => {
-      // biome-ignore lint/style/noArguments: <explanation>
+      // biome-ignore lint/complexity/noArguments: Apply arguments
       assert.ok(isFlattenable(arguments));
     });
   });
