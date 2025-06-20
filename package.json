@@ -1,6 +1,6 @@
 {
   "name": "isflattenable",
-  "version": "1.1.17",
+  "version": "1.1.18",
   "description": "Republish of lodash internal isflattenable method",
   "keywords": [
     "lodash",
