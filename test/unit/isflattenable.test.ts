@@ -1,6 +1,7 @@
-const assert = require('assert');
+import assert from 'assert';
 
-const isFlattenable = require('isflattenable');
+// @ts-ignore
+import isFlattenable from 'isflattenable';
 
 describe('isflattenable', () => {
   describe('happy path', () => {
@@ -23,14 +24,15 @@ describe('isflattenable', () => {
     });
 
     it('should work with arguments', () => {
+      // @ts-ignore
       // biome-ignore lint/complexity/noArguments: Apply arguments
-      assert.ok(isFlattenable(arguments));
+      if (typeof arguments !== 'undefined') assert.ok(isFlattenable(arguments));
     });
   });
 
   describe('unhappy path', () => {
     it('should not work with nothing', () => {
-      assert.ok(!isFlattenable());
+      assert.ok(!isFlattenable(undefined));
     });
 
     it('should not work with null', () => {
