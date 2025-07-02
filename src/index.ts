@@ -1,6 +1,7 @@
 /** Republished from lodash https://github.com/lodash/lodash/blob/master/.internal/isFlattenable.js */
 
-import isArray from 'isarray';
+const isArray = Array.isArray || ((x) => Object.prototype.toString.call(x) === '[object Array]');
+
 import isArguments from 'lodash.isarguments';
 
 /** Built-in value reference. */
