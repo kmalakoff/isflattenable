@@ -1,5 +1,4 @@
 import assert from 'assert';
-// @ts-ignore
 import isFlattenable from 'isflattenable';
 
 describe('exports .ts', () => {

@@ -1,6 +1,5 @@
 import assert from 'assert';
 
-// @ts-ignore
 import isFlattenable from 'isflattenable';
 
 describe('isflattenable', () => {
@@ -23,8 +22,8 @@ describe('isflattenable', () => {
       assert.ok(isFlattenable([1, [2, [3, [4]], 5]]));
     });
 
-    it('should work with arguments', () => {
-      // @ts-ignore
+    // biome-ignore lint/complexity/useArrowFunction: Needed for arguments
+    it('should work with arguments', function () {
       // biome-ignore lint/complexity/noArguments: Apply arguments
       if (typeof arguments !== 'undefined') assert.ok(isFlattenable(arguments));
     });
