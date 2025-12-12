@@ -22,7 +22,6 @@ describe('isflattenable', () => {
       assert.ok(isFlattenable([1, [2, [3, [4]], 5]]));
     });
 
-    // biome-ignore lint/complexity/useArrowFunction: Needed for arguments
     it('should work with arguments', function () {
       // biome-ignore lint/complexity/noArguments: Apply arguments
       if (typeof arguments !== 'undefined') assert.ok(isFlattenable(arguments));
