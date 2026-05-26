@@ -36,9 +36,10 @@
     "version": "tsds version"
   },
   "dependencies": {
-    "lodash.isarguments": ">=2.0.0"
+    "lodash.isarguments": "^3.0.0"
   },
   "devDependencies": {
+    "@types/lodash.isarguments": "^3.1.9",
     "@types/mocha": "*",
     "@types/node": "*",
     "node-version-use": "*",

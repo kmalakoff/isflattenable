@@ -15,5 +15,5 @@ const spreadableSymbol = typeof Symbol !== 'undefined' ? Symbol.isConcatSpreadab
  * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.
  */
 export default function isFlattenable(value: unknown): boolean {
-  return isArray(value) || isArguments(value) || !!(spreadableSymbol && value && value[spreadableSymbol]);
+  return isArray(value) || isArguments(value) || !!(spreadableSymbol && value && (value as Record<symbol, unknown>)[spreadableSymbol]);
 }
