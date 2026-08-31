@@ -1,1 +1,1 @@
-ignores: ["node-version-use", "ts-dev-stack", "isflattenable"]
+ignores: ["isflattenable", "node-version-use", "ts-dev-stack"]
