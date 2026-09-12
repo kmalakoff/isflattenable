@@ -1,6 +1,10 @@
-## isflattenable
+# isflattenable
 
 Republish of lodash internal isflattenable method.
+
+```bash
+npm install isflattenable
+```js
 
 ```
 var isFlattenable = require('isflattenable');
@@ -10,4 +14,6 @@ var array1 = [1, [2, [3, [4]], 5]];
 assert.ok(isFlattenable(array1));
 ```
 
-// Republished from lodash https://github.com/lodash/lodash/blob/master/.internal/isFlattenable.js
+Republished from Lodash's
+[`isFlattenable`](https://github.com/lodash/lodash/blob/master/.internal/isFlattenable.js)
+helper.
